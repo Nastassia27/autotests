@@ -1,5 +1,12 @@
 .message {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .imageAndText {
@@ -7,11 +14,12 @@
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
 }
 
 .text {
-
+    position: relative;
 }
 
 .text:after {
