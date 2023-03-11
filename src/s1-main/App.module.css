@@ -1,11 +1,32 @@
 .App {
     --header_height: 60px;
+    box-sizing: border-box;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    margin:0;
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hw {
 
+
+
+
 }
 
 .hwTitle {
-
+    height: 27px;
+    width: 165px;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
 }

@@ -1,5 +1,12 @@
 .friendMessage {
+    display: flex;
 
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: row-reverse;
 }
 
 .friendImageAndText {
