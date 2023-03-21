@@ -2,6 +2,7 @@
 }
 
 .inputAndButtonContainer {
+
 }
 
 .error {
@@ -18,6 +19,8 @@
 }
 
 .errorInput {
+    width: 372px;
+    height: 36px;
     color:red;
     border-color: red;
 }
