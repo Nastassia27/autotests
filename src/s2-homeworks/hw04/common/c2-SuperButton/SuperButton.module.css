@@ -1,4 +1,5 @@
 .button {
+    overflow: hidden;
     border: none;
     border-radius: 3px;
     color: white;
@@ -10,19 +11,20 @@
     font-size: 14px;
     width: 132px;
     height: 30px;
+    cursor: pointer;
 }
 
 .disabled {
     background-color: #004D99;
     color: #002E5C;
+    opacity: 0.5;
 
 }
 
 .secondary {
     border: 1px solid #0066CC;
     color: #0066CC;
-    width: 128px;
-    height: 20px;
+
 }
 
 .default {
@@ -72,5 +74,6 @@
 }
 
 .button:disabled {
-
+    cursor: default;
+    background-color: #0059b3;
 }
