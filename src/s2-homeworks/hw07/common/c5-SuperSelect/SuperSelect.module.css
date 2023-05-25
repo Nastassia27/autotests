@@ -1,4 +1,10 @@
 .select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    font-size: 1em;
+    color: #333;
+    background-color: white;
 }
 
 .select:focus {
@@ -6,4 +12,9 @@
 
 
 .option:hover {
+    font-size: 1em;
+    color: #333;
+    background-color: white;
 }
+
+

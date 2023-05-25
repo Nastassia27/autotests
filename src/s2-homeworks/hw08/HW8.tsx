@@ -4,6 +4,13 @@ import s from './HW8.module.css'
 import s2 from '../../s1-main/App.module.css'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import User from './User'
+import Paper from "@mui/material/Paper";
+import Table from "@mui/material/Table";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import TableCell from "@mui/material/TableCell";
+import TableBody from "@mui/material/TableBody";
+import TableContainer from "@mui/material/TableContainer";
 
 /*
 * 1 - дописать типы и логику (сортировка по имени, фильтрация по совершеннолетию) homeWorkReducer, проверить тестом
@@ -81,8 +88,21 @@ const HW8 = () => {
                             Check 18+
                         </SuperButton>
                     </div>
+                    <TableContainer component={Paper}>
+                        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                            <TableHead>
+                                <TableRow>
+                                    <TableCell>Name</TableCell>
+                                    <TableCell align="left">Age</TableCell>
 
-                    <table id={'hw8-users'} className={s.users}>
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {finalPeople}
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+                   {/* <table id={'hw8-users'} className={s.users}>
                         <thead className={s.thead}>
                         <tr>
                             <td className={s.nameCol}>Name</td>
@@ -91,7 +111,7 @@ const HW8 = () => {
                         </thead>
 
                         <tbody>{finalPeople}</tbody>
-                    </table>
+                    </table>*/}
                 </div>
             </div>
         </div>
