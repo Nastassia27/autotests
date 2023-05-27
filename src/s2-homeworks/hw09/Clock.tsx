@@ -10,7 +10,7 @@ function Clock() {
     const [show, setShow] = useState<boolean>(false)
 
     const start = () => {
-        let timerId = window.setInterval(()=>setDate(new Date()), 1000 )
+        let timerId = +window.setInterval(()=>setDate(new Date()), 1000 )
 
         setTimerId(timerId)
        /* console.log(timerId)
